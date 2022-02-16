@@ -1,17 +1,15 @@
 from setuptools import setup
-from setuptools import setup
-
 
 setup(
-    name='yourscript',
+    name='hello',
     version='0.1.0',
-    py_modules=['yourscript'],
+    py_modules=['hello'],
     install_requires=[
         'Click',
     ],
     entry_points={
         'console_scripts': [
-            'greeting = yourscript:cli',
+            'greet = hello:hello',
         ],
     },
 )
